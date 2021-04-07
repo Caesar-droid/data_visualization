@@ -3,7 +3,7 @@ x_values=range(1,1001)
 y_values=[x**2 for x in x_values]
 plt.style.use('seaborn')
 fig,bx = plt.subplots()
-bx.scatter(x_values ,y_values, c=(0.6,0,0), s=10)
+bx.scatter(x_values ,y_values, c=y_values,cmap=plt.cm.Blues, s=10)
 
 #set chart title and label axes.
 bx.set_title("Square Numbers",fontsize=24)
