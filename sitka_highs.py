@@ -23,7 +23,7 @@ print(highs)
 
 plt.style.use('seaborn')
 fig, ax =plt.subplots()
-ax.plot(highs,c='green')
+ax.plot(highs,c='red')
 
 #Format plot.
 
