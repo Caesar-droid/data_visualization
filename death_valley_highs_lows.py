@@ -26,17 +26,17 @@ with open (filename) as f:
         
     #ploting the high and low temperature.
     plt.style.use('seaborn')
-    fig,ax= plt.subplot()
+    fig,ax= plt.subplots()
     ax.plot(dates,highs,c='red',alpha=0.5)
     ax.plot(dates,lows,c='blue',alpha=0.5)
     plt.fill_between(dates,highs,lows,facecolor='blue',alpha=0.1)
     
     #format plot.
-    plt.title('Daily highs and lows temperatures-2018\n Death Valley,CA',fontsize=24)
+    plt.title('Daily highs and lows temperatures-2018\n Death Valley,CA',fontsize=20)
     plt.xlabel('',fontsize=16)
     fig.autofmt_xdate()
     plt.ylabel('Temperature(F)',fontsize=16)
-    plt.tick_params(axis='both',which='major',fontsize=16)
+    plt.tick_params(axis='both',which='major',labelsize=16)
     
     plt.show()
     
