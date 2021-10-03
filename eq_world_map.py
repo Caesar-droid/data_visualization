@@ -33,7 +33,7 @@ data=[{
     'marker': {
         'size':[5*mag for mag in mags],
         'color': mags,
-        'colorscale': 'Jet',
+        'colorscale': 'Viridis',
         'reversescale':True,
         'colorbar':{'title': 'Magnitude'},
     },
